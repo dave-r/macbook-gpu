@@ -31,3 +31,14 @@
 1. use `gpu-switch` to switch between integrated (-i) and discrete (-d)
 
 1. run `disable-dgpu.sh` on boot
+
+
+### Useful commands
+`cat /sys/kernel/debug/vgaswitcheroo/switch`
+	Show which gpus are on and active
+
+`echo OFF > /sys/kernel/debug/vgaswitcheroo/switch`
+	Turn off the currently disabled gpu
+
+`echo ON > /sys/kernel/debug/vgaswitcheroo/switch`
+	Turn on the currently disabled gpu
