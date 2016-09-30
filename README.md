@@ -3,11 +3,11 @@
 1. download apple_set_os.efi
 	https://github.com/0xbb/apple_set_os.efi/releases
 
-2. move apple_set_os.efi to 
+1. move apple_set_os.efi to 
 	/boot/apple_set_os.efi
 
-3. edit /etc/grub.d/40_custom, add :
-```
+1. edit /etc/grub.d/40_custom, add :
+	```
 	/* NOTE : paths/devices/guids are specific to the machine/install
 	    Use the values from the menu entry in /boot/efi/EFI/fedora/grub.cfg
 	*/
@@ -18,16 +18,16 @@
 	fi
 	chainloader (${root})/apple_set_os.efi
 	boot
-```
+	```
 
-4. update grub config
+1. update grub config
 	```
 	sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 	```
 
-5. download gpu switch
+1. download gpu switch
 	https://github.com/0xbb/gpu-switch
 
-6. use gpu-switch to switch between integrated (-i) and discrete (-d)
+1. use `gpu-switch` to switch between integrated (-i) and discrete (-d)
 
-
+1. run `disable-dgpu.sh` on boot
