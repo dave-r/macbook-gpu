@@ -6,4 +6,4 @@ echo "disabling gpu"
 
 # turn off the discrete gpu
 echo "powering down gpu"
-bash -c "echo OFF > /sys/kernel/debug/vgaswitcheroo/switch
+bash -c "echo OFF > /sys/kernel/debug/vgaswitcheroo/switch"
