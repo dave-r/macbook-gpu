@@ -34,11 +34,16 @@
 
 
 ### Useful commands
-`cat /sys/kernel/debug/vgaswitcheroo/switch`
+```
+cat /sys/kernel/debug/vgaswitcheroo/switch
+```
 	Show which gpus are on and active
 
-`echo OFF > /sys/kernel/debug/vgaswitcheroo/switch`
+```
+echo OFF > /sys/kernel/debug/vgaswitcheroo/switch
+```
 	Turn off the currently disabled gpu
 
-`echo ON > /sys/kernel/debug/vgaswitcheroo/switch`
+```echo ON > /sys/kernel/debug/vgaswitcheroo/switch
+```
 	Turn on the currently disabled gpu
