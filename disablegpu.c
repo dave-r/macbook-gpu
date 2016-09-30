@@ -1,3 +1,7 @@
+/** 
+  * Taken from Arch Wiki
+  * https://wiki.archlinux.org/index.php/MacBookPro10,x#Graphics_2
+  */
 #include <stdio.h>
 #include <sys/io.h>
 
@@ -6,7 +10,8 @@
 #define GMUX_PORT_SWITCH_EXTERNAL	0x40
 #define GMUX_PORT_DISCRETE_POWER	0x50
 #define GMUX_PORT_VALUE			0xc2
-#define GMUX_PORT_READ			0xd0
+#define GMUX_PORT_READ			0xd0https://wiki.archlinux.org/index.php/MacBookPro10,x#Graphics_2
+*/
 #define GMUX_PORT_WRITE			0xd4
 
 #define GMUX_IOSTART		0x700
